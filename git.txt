@@ -1,0 +1,30 @@
+git pull - to update your  local repo
+git add-
+git status
+git commit-m - commiting data to send  it remote repo
+git push - send the date to local repo
+
+
+git fetch - to update the remote repo data
+git clone - to download remote repo data
+
+how to create a branch in git-
+git branch branch1
+git checkout branch1
+
+
+install java on ec2
+1.create a file name java
+2.link - wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u141-b15/336fa29ff2bb4ef291e347e091f7f4a7/jdk-8u141-linux-x64.rpm
+3.installing package -sudo rpm -i filename
+
+install jenkins
+https://www.youtube.com/watch?v=jmm8DsosBqw
+
+
+how to move contents in the folder - mv * ../
+
+install tomcat 
+https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-centos-7
+
+https://www.youtube.com/watch?v=m21nFreFw8A
