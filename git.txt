@@ -2,7 +2,7 @@ git pull - to update your  local repo
 git add-
 git status
 git commit-m - commiting data to send  it remote repo
-git push - send the date to local repo
+git push - send the date to remote repo
 
 
 git fetch - to update the remote repo data
