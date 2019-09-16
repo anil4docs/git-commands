@@ -2,6 +2,11 @@ git pull - to update your  local repo
 git add-
 git status
 git commit-m - commiting data to send  it remote repo
+git status
+git checkout -b feature/role_test_iperf
+git add .
+git commit --amend
+
 git push - send the date to remote repo
 
 
