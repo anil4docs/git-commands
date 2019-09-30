@@ -70,3 +70,51 @@ ansible -i /home/ansible/inventory node2 -m ping
 To redirect output of a successful command to /home/ansible/output:
 ansible -i /home/ansible/inventory node1 -m ping > /home/ansible/output
 
+scp ansible_iperf_client.sh 10.227.9.134:/home/amd/ansible
+
+chmod +x ./ansible_iperf_client.sh
+iperf -c chmod +x ./ansible_iperf_client.sh
+
+./iperf_client.sh
+python iperf_client.py client "10.227.9.134" "22224 22225"
+
+scp run-fio.yml 10.227.9.90:/home/amd/ansible
+
+./iperf_server.sh
+
+cat iperf_thd*
+cat *.out
+ansible-playbook -i hosts iperf_server.yml
+
+ansible-playbook -i locahost run-fio.yml
+
+#Playbook execution
+-------------------
+ansible-playbook -i hosts iperf_server.yml
+ansible-playbook -i hosts iperf_client.yml
+
+#To display output more indetail in json format
+-----------------------------------------------
+ansible-playbook -i hosts iperf_server.yml -vvv
+vi
+
+
+scp FIO 10.227.9.90:/home/amd/ansible
+
+#Python direct invocation in shell
+------------------------
+python iperf_client.py client "10.227.9.134"
+
+args:
+    executable: /bin/bash
+
+R W X
+4 2 1
+
+5=RX
+7= RWX
+
+0755
+
+ansible-playbook -i hosts run-fio.yml -k
+apt-get install sshpass
